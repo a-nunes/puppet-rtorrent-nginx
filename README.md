@@ -10,7 +10,7 @@ The module has been divided into 4 independant stages that by default are all ex
 1. Installs required build dependencies, see [the build manifest for packages that are installed](manifests/rtorrent_build.pp)
 2. [Builds libtorrent and rtorrent](files/rtorrent-build.sh). Roughly does
  * Clones libtorrent from official github repo
- * ./configure --with-posix-fallocate 
+ * ./configure --with-posix-fallocate
  * make and make install
  * ldconfig
  * Clones rtorrent from official github repo
@@ -31,6 +31,6 @@ The module has been divided into 4 independant stages that by default are all ex
 
 ## (OPTIONAL) Stage 4: Setup nginx
 
-If you do not have an existing nginx or apache server setup you can use rtorrent::nginx_php which will setup a nginx webserver with php5. 
+If you do not have an existing nginx or apache server setup you can use rtorrent::nginx_php which will setup a nginx webserver with php5.
 
 This is not enabled by default

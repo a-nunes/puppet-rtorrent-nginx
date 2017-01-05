@@ -14,7 +14,7 @@ cd $BUILD_FOLDER
 git clone https://github.com/rakshasa/libtorrent.git
 cd libtorrent
 ./autogen.sh
-./configure --with-posix-fallocate 
+./configure --with-posix-fallocate
 make
 make install
 cd $BUILD_FOLDER
